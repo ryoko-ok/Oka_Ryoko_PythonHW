@@ -13,8 +13,8 @@ while gameVars.player is False:
 	player = input("choose rock, paper or scissors: ")
 	player = player.lower()
 
-	print("computer chose ", gameVars.computer, "\n")
-	print("player chose ", player, "\n")
+	print("I chose ", gameVars.computer, "\n")
+	print("You chose ", player, "\n")
 
 	### This is where you would have to call compare
 	
