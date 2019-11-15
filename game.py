@@ -10,14 +10,14 @@ while gameVars.player is False:
 	print("Choose your weapon!\n")
 	print("..*..*..*..*..*..*..*..*..*..*..*..*\n")
 
-	player = input("choose rock, paper or scissors: ")
-	player = player.lower()
+	gameVars.player = input("choose rock, paper or scissors: ")
+	gameVars.player = gameVars.player.lower()
 
 	print("I chose ", gameVars.computer, "\n")
-	print("You chose ", player, "\n")
+	print("You chose ", gameVars.player, "\n")
 
 	### This is where you would have to call compare
-	def compareStuff(thing1, thing2):
+def compareStuff(thing1, thing2):
 	# compare and print all the things
 	if thing1 == thing2:
 		print('the match!')
@@ -34,5 +34,5 @@ while gameVars.player is False:
 
 	else:
 		# need to check all of our conditions after checking for a tie
-		player = False
+		gameVars.player = False
 		gameVars.computer = gameVars.choices[randint(0, 2)]
