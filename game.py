@@ -17,7 +17,12 @@ while gameVars.player is False:
 	print("You chose ", player, "\n")
 
 	### This is where you would have to call compare
-	
+	def compareStuff(thing1, thing2):
+	# compare and print all the things
+	if thing1 == thing2:
+		print('the match!')
+	else:
+		print('they do not match')
 	#### end compare stuff
 	
 	# handle all lives lost for player or AI
