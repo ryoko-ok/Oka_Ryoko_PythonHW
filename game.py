@@ -1,14 +1,14 @@
 # import the random package so that we can generate a random choice
 from random import randint
-from gameFunctions import winlose, gameVars
+from gameFunctions import winlose, gameVars, functionexamples
 
 while gameVars.player is False:
 	# set player to True
-	print("**********************************")
-	print("Computer lives: ", gameVars.computer_lives, "/", gameVars.total_lives, "\n")
-	print("Player lives: ", gameVars.player_lives, "/", gameVars.player_lives, "\n")
+	print("..*..*..*..*..*..*..*..*..*..*..*..*\n")
+	print("My life Points: ", gameVars.computer_lives, "/", gameVars.total_lives, "\n")
+	print("Your life Points: ", gameVars.player_lives, "/", gameVars.player_lives, "\n")
 	print("Choose your weapon!\n")
-	print("**********************************")
+	print("..*..*..*..*..*..*..*..*..*..*..*..*\n")
 
 	player = input("choose rock, paper or scissors: ")
 	player = player.lower()
